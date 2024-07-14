@@ -17,6 +17,9 @@
     "start": "node server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
+  "engines": {
+    "node": ">=20.14.0 <22.4.1"
+  },
   "name": "healthbooker",
   "version": "1.0.0",
   "main": "Server.js",
