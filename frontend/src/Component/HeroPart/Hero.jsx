@@ -14,7 +14,7 @@ const Hero = () => {
                 Join us today and take the first step towards a healthier, happier you. </p>
         </div>
         <div className = "hero-image">
-            <img src= "/images/images1.webp" alt = "images"/>
+            <img src= "/images/image1.jfif" alt = "images" className = "rounded-lg"/>
         </div>
     </section>
   )
