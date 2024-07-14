@@ -34,7 +34,7 @@ function App() {
         <Route path = "/resetpassword/:token" element = {<ResetPassword/>}/>
         <Route path = "/error" element = {<ErrorPage/>}/>
         <Route path = "/userprofile" element = {<SingleProfile/>}/>
-        <Route path = "/single-profile" element = {<Profile/>}/>
+        <Route path = "/single-profile/:id" element = {<Profile/>}/>
         <Route path = '/doctorslist' element ={<DoctorsList/>}/>
         <Route path = "/dashboard" element = {<AdminRouter/>}>
           <Route path = "" element ={<DashBoard/>}/>

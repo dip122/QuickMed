@@ -18,6 +18,7 @@ const DoctorsList = () => {
         const GetDoctors = async()=>{
             try{
                 const response = await axios.get(getalldoctorsapi);
+                console.log(response);
                 if(response && response.data.success){
                     setDoctors(response.data.Doctors);
                     console.log(response.data.Doctors);
@@ -30,7 +31,10 @@ const DoctorsList = () => {
             }
         }
 
-        GetDoctors();
+        if(auth && auth?.user){
+            console.log('yes');
+            GetDoctors()
+        }
     },[auth && auth?.user])
 
   return (

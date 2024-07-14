@@ -19,10 +19,10 @@ const Doctors = () => {
     const Getalldoctors = async()=>{
       try{
         const response = await axios.get(getalldoctorsapi);
-        console.log('yes');
+        // console.log('yes');
         if(response && response.data.success){
           setDoctors(response.data.Doctors);
-          console.log(response.data)
+          // console.log(response.data)
         }else{
           setDoctors([]);
         }
