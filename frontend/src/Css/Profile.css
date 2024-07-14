@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.single-profile{
+    padding : 50px 70px 30px;
+    display : flex;
+    flex-direction: column;
+    height : 100%;
+    gap : 20px;
+    justify-content: center;
+    background-image: url('../../public/Images/profile_pic.png');
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-attachment: fixed;
+}
+.single-profile .header{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size : 20px ;
+    font-weight : 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.single-profile .section {
+    display : flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.single-profile .section .img-class img{
+    height : 300px;
+    width : 300px;
+    border-radius: 50%;
+}
+.single-profile .section .section-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap : 5px;
+}
+.single-profile .section .section-right p{
+    font-family: "Poppins", sans-serif;
+    font-weight : 500;
+    font-size : 16px;
+}
+.single-profile .section .section-right span{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size : 15px;
+}
+.single-profile .certificate-section{
+    display : flex;
+    justify-content: space-evenly;
+
+}
+.single-profile .certificate-section .certificate-label{
+    font-size : 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight : 600;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.single-profile .certificate-section img{
+    height : 200px;
+    width : 200px;
+    border-radius: 25%;
+}
+
+@media(max-width : 910px){
+    .single-profile {
+        height : 100%;
+    }
+    .single-profile .section .img-class img {
+        height : 250px;
+        width : 250px;
+    }
+}
+@media(max-width : 740px){
+    .single-profile .section .img-class img {
+        height : 200px;
+        width : 200px;
+    }
+    .single-profile .certificate-section img{
+        height : 180px;
+        width : 180px;
+    }
+}
+@media(max-width : 660px){
+    .single-profile .section .section-right p {
+        font-size : 14px;
+
+    }
+    .single-profile .section .section-right span {
+        font-size : 13px;
+    }
+}
+@media(max-width : 590px){
+    .single-profile .section {
+        flex-direction : column;
+        justify-content : center;
+        align-items: center;
+    }
+    .single-profile .section .section-right {
+        gap : 8px;
+        text-align: center;
+        margin-top : 20px;
+    }
+    .single-profile .certificate-section img{
+        height : 150px;
+        width : 150px;
+    }
+}
+
+@media (max-width : 420px){
+    .single-profile {
+        height : 100vh;
+    }
+    .single-profile .header {
+        font-size : 18px;
+    }
+    .single-profile .certificate-section .certificate-label {
+        font-size : 15px;
+    }
+    .single-profile .certificate-section img{
+        height : 120px;
+        width : 120px;
+        border-radius: 50%;
+    }
+    .single-profile .certificate-section {
+        gap : 10px;
+    }
+}

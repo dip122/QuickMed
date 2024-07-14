@@ -1,0 +1,6 @@
+.disabled-appointment{
+    display : none;
+}
+.enable-appointment{
+    display : block;
+}

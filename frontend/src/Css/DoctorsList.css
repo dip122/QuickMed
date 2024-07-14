@@ -1,0 +1,37 @@
+.doctor-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 85%;
+    margin: 2rem auto;
+}
+.doctor-list .list-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : 2px; 
+}
+.doctor-list .list-items .header{
+    font-size : 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.doctor-list .doctors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 35px;
+    width: 100%;
+}
+@media (max-width : 500px){
+    .doctor-list{
+        /* height : 100vh; */
+    }
+    .doctor-list .list-items .header{
+        font-size : 16px;
+    }
+}

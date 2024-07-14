@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('../App.css');
+
+.about-section {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 85%;
+    gap : 40px;
+    margin : 24px auto;
+}
+.about-section .header {
+    font-size : 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-section .about-container{
+    display : flex;
+    justify-content: space-between;
+    gap : 20px;
+    align-items: center;
+}
+.about-section .about-container .image-class img{
+    height : 400px;
+    width : 400px;
+    padding : 12px;
+    border-radius: 10px;
+    background-color : white
+}
+.about-section .about-container .description {
+    width : 55%;
+}
+.about-section .about-container .description .about-desc{
+    font-size : 15px;
+    font-weight : 400;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@media(max-width:805px){
+    .about-section .about-container{
+        flex-direction: column
+    }
+    .about-section .header {
+        margin-top : 3rem ;
+    }
+    .about-section .about-container .description {
+        width : 90%;
+    }
+}
+@media(max-width:640px){
+    .about-section .about-container .image-class img {
+        height : 340px;
+        width : 340px;
+    } 
+    .about-section .about-container .description {
+        width : 85%;
+    }
+}
+@media(max-width:530px){
+    .about-section .about-container .image-class img {
+        height : 300px;
+        width : 300px;
+    }
+    .about-section .about-container .description {
+        width : 80%;
+    }
+}
+@media(max-width:420px){
+    .about-section .about-container .description {
+        width : 92%;
+    }
+}
+@media(max-width:370px){
+    .about-section .about-container .image-class img {
+        height : 270px;
+        width : 270px;
+    }
+    .about-section .about-container .description {
+        width : 97%;
+    }
+}

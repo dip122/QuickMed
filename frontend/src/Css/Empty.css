@@ -1,0 +1,12 @@
+@import url('../App.css'); 
+
+.empty-page {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin : auto;
+    font-size : 3rem;
+    height : 100vh;
+    color : black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

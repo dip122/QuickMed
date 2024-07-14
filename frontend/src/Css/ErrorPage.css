@@ -1,0 +1,52 @@
+.Error-page {
+    display : flex;
+    justify-content:center;
+    align-items:center;
+    gap : 30px;
+    height : 100vh;
+    width : 100%;
+}
+.Error-page .image-class {
+    background-color: #fff;
+    border-radius: 20px;
+}
+.Error-page .image-class img {
+    height : 400px;
+    width : 400px;
+    padding : 20px;
+}
+.Error-page .back-to-home button {
+    font-size : 13px;
+    padding : 0.6rem 0.8rem;
+    border : none;
+    font-weight : 600;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    border-radius : 5px;
+    cursor: pointer;
+    text-transform : uppercase;
+    background-color :  #4681f4;
+    color : #fff;
+    width : 150px;
+}
+
+@media(max-width: 650px){
+    .Error-page {
+        flex-direction: column;
+    }
+    .Error-page .back-to-home button {
+        width : 250px;
+    }
+}
+@media(max-width: 500px){
+    .Error-page {
+        height : 80vh;
+    }
+    .Error-page .image-class img {
+        height : 270px;
+        width: 270px;
+    }
+    .Error-page .back-to-home button {
+        width : 250px;
+    }
+}

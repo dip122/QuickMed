@@ -1,0 +1,9 @@
+.general-icon {
+    font-size : 30px;
+}
+
+@media (max-width: 600px) {
+    .general-icon {
+        font-size : 18px;
+    }
+}

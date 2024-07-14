@@ -1,0 +1,90 @@
+.doctors-section{
+    margin-top : 60px;
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    font-family: "Poppins", sans-serif;
+    width : 100vw;
+}
+
+.doctors-section .doctors-container {
+    display : flex;
+    justify-content: center;
+    width : 80%;
+    margin-top : 20px;
+}
+
+table {
+    width : 100%;
+}
+
+.special-td span {
+    color : #4B49AC;
+    cursor: pointer;
+}
+.doctors-section .doctors-container  table td button{
+    font-size : 13px;
+    padding : 0.6rem 0.8rem;
+    border : none;
+    font-weight : 600;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    border-radius : 5px;
+    cursor: pointer;
+    text-transform : uppercase;
+    background-color :  #4681f4;
+    color : #fff;
+    width : 50%;
+    margin-left: 10px;
+}
+
+th {
+  text-align: center;
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  background-color: rgb(219, 223, 246);
+  color: var(--bold-text-color);
+}
+
+tr {
+  margin-bottom: 10px;
+}
+
+tr:nth-child(2n + 1) {
+  background-color: rgb(200, 200, 200); /* Changed color for odd rows */
+}
+
+tr:nth-child(2n + 2) {
+  background-color: rgb(180, 180, 180); /* Changed color for even rows */
+}
+  td {
+    padding : 8px;
+  }
+
+  @media (max-width: 890px) {
+    .doctors-section {
+    }
+    .doctors-section .doctors-container{
+      width : 90%;
+    }
+
+  }
+  
+  @media (max-width: 600px) {
+    .doctors-section .doctors-container{
+      width : 98%;
+    }
+  }
+  @media (max-width: 460px) {
+    td{
+        padding : 5px;
+    }
+  }
+  @media (max-width: 335px) {
+    th{
+        padding : 0.2rem 0.5rem;
+    }
+    td{
+        padding : 3px;
+    }
+  }

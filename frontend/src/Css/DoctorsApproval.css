@@ -1,0 +1,12 @@
+.do-work {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 2rem;
+}
+.do-work .accept {
+    cursor: pointer;
+}
+.do-work .reject {
+    cursor: pointer;
+}

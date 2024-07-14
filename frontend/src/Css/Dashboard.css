@@ -1,0 +1,18 @@
+.sidebar-closed .dashboard-layout .sidebar-component {
+  transition: all 0.5s;
+  width : 0vw;
+  display: none;
+}
+.sidebar-closed .dashboard-layout .doctors-component{
+  width : 100vw;
+}
+.dashboard {
+  height : 100vh;
+}
+.dashboard .dashboard-layout {
+  /* display: flex; */
+  height : auto;
+  display : flex;
+  gap : 1rem;
+  width : 100%;
+}

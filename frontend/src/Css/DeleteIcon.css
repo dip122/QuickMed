@@ -1,0 +1,11 @@
+.delete-icon{
+    font-size : 30px;
+    padding : 8px;
+    cursor: pointer;
+}
+
+@media (max-width : 660px){
+    .delete-icon {
+        font-size : 20px;
+    }
+}

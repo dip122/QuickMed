@@ -1,0 +1,79 @@
+.card-section {
+    margin-top: 10px;
+    margin-left : 10px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    background-color : #fff;
+    background-color: aliceblue;
+    height : 430px;
+    width : 320px;
+    border-radius: 5px;
+}
+.card-section .image-section {
+    padding : 2px;
+    border-radius: 10px;
+    height : 100%;
+    width : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+}
+.card-section .image-section img {
+    height : 220px;
+    width : 220px;
+    border-radius: 10px;
+    background-color : #98BDFF;
+    padding : 3px;
+}
+.card-description {
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.card-description h3{
+    font-size : 18px;
+    font-weight : 500;
+    font-family: "Poppins", sans-serif;
+}
+.card-description p {
+    font-family: "Poppins", sans-serif;
+    font-weight : 400;
+}
+.btn-class {
+    margin-bottom: 10px;
+}
+.btn-class button{
+    font-size : 12px;
+    padding : 0.5rem 0.6rem;
+    border : none;
+    font-weight : 600;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    border-radius : 5px;
+    cursor: pointer;
+    text-transform : uppercase;
+    background-color :  #4681f4;
+    color : #fff;
+}
+
+@media(max-width : 500px){
+    .card-section {
+        height : 350px;
+        width : 250px;
+    }
+    .card-section .image-section img {
+        height : 170px;
+        width : 170px;
+    }
+    .card-description p  {
+        font-size : 11px;
+    }
+    .btn-class button {
+        font-size : 9px;
+    }
+}

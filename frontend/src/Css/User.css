@@ -1,0 +1,35 @@
+table tbody tr td img {
+    border-radius: 50%;
+}
+.user-header {
+    font-family: "Poppins", sans-serif;
+    font-size : 20px;
+}
+
+table tbody tr td .btn {
+    background-color: red;
+    padding : 20px;
+}
+
+@media (max-width:550px){
+    .user-header {
+        font-size: 15px;
+    }
+    table tbody tr td img  {
+        /* height : 60px; */
+        /* width : 60px; */
+    }
+    table {
+        font-size : 10px;
+    }
+}
+
+@media (max-width:420px) {
+    table {
+        font-size : 8px;
+    }
+    table tbody tr td img {
+        /* height : 50px; */
+        /* width : 50px; */
+    }
+}

@@ -1,0 +1,10 @@
+.align-items{
+    font-size : 35px;
+    padding : 10px;
+}
+
+@media (max-width : 660px){
+    .align-items {
+        font-size : 22px;
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.user-appointments{
+    margin-top : 24px;
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    height : 100%;
+    width : 100vw;
+
+}
+.user-appointments .appointments-heading{
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+.user-appointments .appointments-container{
+    display : flex;
+    justify-content: center;
+    width : 70%;
+    margin-top : 20px;
+}
+
+@media (max-width: 890px) {
+    .user-appointments {
+      width: 90vw;
+      margin : 0 auto;
+    }
+    .user-appointments .appointments-container{
+        width : 80%;
+    }
+
+  }
+  
+  @media (max-width: 600px) {
+    .user-appointments {
+        width : 85vw;
+        /* justify-content: flex-end; */
+    }
+    .user-appointments .appointments-container{
+        width : 85%;
+    }
+  }
