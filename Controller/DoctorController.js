@@ -191,7 +191,7 @@ class DoctorController {
 
     static deletedoctorcontroller = async(req,res)=>{
         try{
-            const {userId} = req.body.id ; //userId of the doctor
+            const {userId} = req.body ; //userId of the doctor
             const user = await usermodel.findByIdAndUpdate({_id : userId},{
                 isDoctor : false , status : "pending"
             },{new : true});

@@ -3,10 +3,12 @@ import { useAuth } from '../../Context/Context'
 import Loading from '../Loading/Loading';
 import '../../Css/Doctors.css';
 import axios from 'axios';
-import { getalldoctorsapi} from '../../Apis/Apiroutes';
+import { deletedoctorapi, getalldoctorsapi} from '../../Apis/Apiroutes';
 import { useNavigate } from 'react-router-dom';
 import DeleteIcon from '../Icon/DeleteIcon';
 import AdminNavbar from '../AdminNavbar/AdminNavbar';
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Doctors = () => {
 
@@ -39,6 +41,35 @@ const Doctors = () => {
     navigate(`/single-profile/${id}`);
   }
 
+  const DeleteDoctor = async(id)=>{
+    try{
+      const formData = new FormData();
+      formData.append('userId',id);
+      const response = await toast.promise(
+        axios.post(deletedoctorapi ,formData, {
+          withCredentials: true,
+          headers: {
+            "Content-Type" : "multipart/form-data"
+          }
+        }),{
+          pending : "Processing",
+          error : "something went wrong"
+        }
+      );
+
+      if(response && response.data.success){
+        const updateddoctors = doctors.filter((doc)=>doc?.userId?._id !== id);
+        setDoctors(updateddoctors);
+        toast.success("successfully Deleted Doctor");
+      }else{
+        toast.error("Cannot delete the doctor");
+      }
+    }catch(error){
+      console.log(error);
+      toast.error("Api Error occured");
+    }
+  }
+
 
   return (
     <>
@@ -63,13 +94,14 @@ const Doctors = () => {
                       <td>{`${doc?.userId?.firstname} ${doc?.userId?.lastname}`}</td>
                       <td>{doc?.userId?.email}</td>
                       <td onClick ={()=>GetDetails(doc?._id)} className = "special-td"><span>Details</span></td>
-                      <td><div className = "delete-icons p-1"><DeleteIcon/></div></td>
+                      <td><div className = "delete-icons p-1" onClick= {()=>DeleteDoctor(doc?.userId?._id)}><DeleteIcon/></div></td>
                     </tr>
                   )
                 })}
               </tbody>
             </table>
           </div>
+          <ToastContainer/>
         </section>
       ) }
     </>

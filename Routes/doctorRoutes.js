@@ -11,6 +11,6 @@ router.get('/getdetails/:id',requireSignIn,DoctorController.getdetailscontroller
 router.put('/accept',requireSignIn,DoctorController.acceptdoctorcontroller)
 router.put('/reject',requireSignIn,DoctorController.rejectdoctorcontroller)
 router.put('/update-profile-image',requireSignIn,DoctorController.updateprofileimagecontroller)
-router.delete('/deletedoctor',requireSignIn,DoctorController.deletedoctorcontroller);
+router.post('/deletedoctor',requireSignIn,DoctorController.deletedoctorcontroller);
 
 module.exports = router;

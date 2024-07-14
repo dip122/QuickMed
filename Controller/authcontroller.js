@@ -85,7 +85,7 @@ class UserController {
     static logincontroller = async(req,res)=>{
         try{
             const {email,password} = req.body;
-            console.log(email);
+            // console.log(email);
             if(!email || !password){
                 return res.status(200).send({
                     success : false,
