@@ -26,3 +26,5 @@ export const deleteprescriptionsapi = `/api/v1/pres/delete-prescription/`;
 export const forgetpasswordapi = `/api/v1/auth/forget-password`;
 export const resetpasswordapi = `/api/v1/auth/resetpassword/`;
 export const deletedoctorapi = `/api/v1/doctor/deletedoctor`;
+
+export const socketurl = ``;

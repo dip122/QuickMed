@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Css/userappointments.css';
 import Navbar from '../Component/Navbar/Navbar';
-import { deleteNotificationapi, notificationsapi } from '../Apis/Apiroutes';
+import { deleteNotificationapi, notificationsapi, socketurl } from '../Apis/Apiroutes';
 import DeleteIcon from '../Component/Icon/DeleteIcon';
 import EmptyPage from '../Component/Empty/EmptyPage';
 import { io } from 'socket.io-client';
@@ -39,7 +39,7 @@ const Notifications = () => {
 
     useEffect(()=>{
         if(auth && auth?.user){
-            const socket = io("http://localhost:9090",{
+            const socket = io(socketurl,{
                 withCredentials : true,
             });
 
