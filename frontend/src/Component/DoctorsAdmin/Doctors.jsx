@@ -45,6 +45,7 @@ const Doctors = () => {
     try{
       const formData = new FormData();
       formData.append('userId',id);
+      console.log(id);
       const response = await toast.promise(
         axios.post(deletedoctorapi ,formData, {
           withCredentials: true,
@@ -58,10 +59,12 @@ const Doctors = () => {
       );
 
       if(response && response.data.success){
+        console.log('done')
         const updateddoctors = doctors.filter((doc)=>doc?.userId?._id !== id);
         setDoctors(updateddoctors);
         toast.success("successfully Deleted Doctor");
       }else{
+        console.log('notdone');
         toast.error("Cannot delete the doctor");
       }
     }catch(error){
