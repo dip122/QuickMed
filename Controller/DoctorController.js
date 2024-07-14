@@ -197,6 +197,11 @@ class DoctorController {
             },{new : true});
 
             const DeletedDoctor = await DoctorModel.findOneAndDelete({userId : userId});
+            if(DeletedDoctor && DeletedDoctor.Certificate && DeletedDoctor.Certificate.public_id){
+                const public_id = DeletedDoctor.Certificate.public_id;
+                const result = await cloudinary.uploader.destroy(public_id);
+            }
+            
             //remove all appointments of the doctor
 
             
