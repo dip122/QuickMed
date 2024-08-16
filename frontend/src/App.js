@@ -22,6 +22,7 @@ import UserRouter from './Router/UserRouter'
 import AdminRouter from './Router/Adminrouter'
 import ForgetPassword from './Pages/ForgetPassword';
 import ResetPassword from './Pages/ResetPassword';
+import QnA from './Pages/QnA';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path = "/resetpassword/:token" element = {<ResetPassword/>}/>
         <Route path = "/error" element = {<ErrorPage/>}/>
         <Route path = "/userprofile" element = {<SingleProfile/>}/>
+        <Route path = "/qna" element = {<QnA/>}/>
         <Route path = "/single-profile/:id" element = {<Profile/>}/>
         <Route path = '/doctorslist' element ={<DoctorsList/>}/>
         <Route path = "/dashboard" element = {<AdminRouter/>}>
